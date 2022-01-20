@@ -18,6 +18,6 @@ COPY --from=builder /week6_supabase_nextjs/public ./public
 COPY --from=builder /week6_supabase_nextjs/.next ./.next
 COPY --from=builder /week6_supabase_nextjs/node_modules ./node_modules
 COPY --from=builder /week6_supabase_nextjs/package.json ./package.json
-
+#
 EXPOSE 3000
 CMD ["npm", "start"]
