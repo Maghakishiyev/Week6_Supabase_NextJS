@@ -19,6 +19,6 @@ steps:
       username:
         from_secret: registry_username
       password:
-        from_secret: registry_password
+        from_secret: registery_password
       repo: season28/week6_supabase_nextjs
       tags: ${DRONE_COMMIT_SHA:0:7}
